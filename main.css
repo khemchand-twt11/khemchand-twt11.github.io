@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+#basic-info {
+  color: #0b2447;
+  font-family: "Boogaloo", cursive;
+  font-size: 4.2rem;
+}
