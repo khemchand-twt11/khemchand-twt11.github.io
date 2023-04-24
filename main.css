@@ -2,13 +2,197 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
+/* Navbar styling */
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 50px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+/* Hamburger menu */
+#menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.show {
+    left: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    margin: 15px 0;
+  }
+
+  .navbar a {
+    padding: 8px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  #menu {
+    display: block;
+  }
+}
+
+/* Hamburger menu icon animation */
+#menu.active .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu.active .line-2 {
+  opacity: 0;
+}
+
+#menu.active .line-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Hamburger menu lines styling */
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Navbar styling */
+
+/* HOME SECTION */
 #basic-info {
   color: #0b2447;
   font-family: "Boogaloo", cursive;
   font-size: 4.2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 6.2rem;
+}
+
+#basic-info h1:first-child {
+  margin-top: 0;
+}
+
+#basic-info h3 {
+  margin-top: 30px;
+}
+
+#basic-info .btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 2px solid #0b2447;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #0b2447;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#basic-info .btn:hover {
+  background-color: #0b2447;
+  color: white;
+}
+
+#basic-info .btn span {
+  margin-right: 10px;
+}
+
+#basic-info .btn i {
+  font-size: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #basic-info {
+    font-size: 3.2rem;
+  }
+
+  #basic-info h3 {
+    font-size: 2.2rem;
+  }
+
+  #basic-info .btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #basic-info {
+    font-size: 2.6rem;
+  }
+
+  #basic-info h3 {
+    font-size: 1.8rem;
+  }
+
+  #basic-info .btn {
+    font-size: 1.4rem;
+    padding: 10px 25px;
+  }
 }
