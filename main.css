@@ -7,8 +7,14 @@
   --ff-primary: "Poppins", sans-serif;
 
   /* font weight */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
 
-  --fw-bold: 700;
+  /* font sizes */
+  --fs-400: 1rem;
+  --fs-450: 1.4rem;
 }
 
 /* Css reset by andy bell  */
@@ -34,6 +40,9 @@ ol[role="list"] {
 html:focus-within {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -52,6 +61,7 @@ a:not([class]) {
 }
 a {
   text-decoration: none;
+  color: var(--clr-900);
 }
 
 /* Make images easier to work with */
@@ -77,15 +87,15 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+/* UTILITY CLASSES */
 
+/* NORMAL CLASSES */
 .main-container {
-  /* --max-width: 1410px; */
   --padding: 1rem;
-  scroll-snap-type: y mandatory;
-
   height: 100vh;
   width: min(100%, 100% - (var(--padding) * 2));
   margin-inline: auto;
+  scroll-snap-type: y mandatory;
 }
 .scroll-behaviour {
   scroll-snap-align: start;
