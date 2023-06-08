@@ -27,297 +27,304 @@
       rel="stylesheet"
       href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
-    <!-- navbar  -->
-    <div id="header">
-      <div>
-        <a href="#" class="logo"> Khemchand</a>
+    <div class="main-container">
+      <!-- navbar  -->
+      <div id="header">
+        <div>
+          <a href="#" class="logo"> Khemchand</a>
+        </div>
+        <nav id="nav-menu" class="navbar">
+          <ul>
+            <li><a class="active nav-link home" href="#home">Home</a></li>
+            <li><a class="nav-link about" href="#about">About</a></li>
+            <li><a class="nav-link skills" href="#skills">Skills</a></li>
+            <li><a class="nav-link projects" href="#projects">Projects</a></li>
+            <li><a class="nav-link contact" href="#contact">Contact</a></li>
+            <div>
+              <button id="resume-button-1">
+                <a
+                  id="resume-link-1"
+                  href="images/Khemchand-Resume.pdf"
+                  download
+                  onclick="window.open('images/Khemchand-Resume.pdf')"
+                  class="btn btn-primary rounded ml-4 nav-link resume"
+                  ><span>Resume</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </button>
+            </div>
+          </ul>
+        </nav>
       </div>
-      <nav id="nav-menu" class="navbar">
-        <ul>
-          <li><a class="active nav-link home" href="#home">Home</a></li>
-          <li><a class="nav-link about" href="#about">About</a></li>
-          <li><a class="nav-link skills" href="#skills">Skills</a></li>
-          <li><a class="nav-link projects" href="#projects">Projects</a></li>
-          <li><a class="nav-link contact" href="#contact">Contact</a></li>
+      <!-- navbar  -->
+
+      <div id="home">
+        <div id="basic-info">
           <div>
-            <button id="resume-button-1">
-              <a
-                id="resume-link-1"
-                href="images/Khemchand-Resume.pdf"
-                download
-                onclick="window.open('images/Khemchand-Resume.pdf')"
-                class="btn btn-primary rounded ml-4 nav-link resume"
-                ><span>Resume</span>
-                <i class="fa-solid fa-download"></i>
-              </a>
-            </button>
+            <h1>Hii There,</h1>
+            <h1 id="user-detail-name">I'm Khemchand</h1>
+            <h3>
+              <a href="https://git.io/typing-svg"
+                ><img
+                  src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=32&pause=1000&color=0B2447&width=500&lines=A+Full+Stack+Web+Developer"
+                  alt="Typing SVG"
+              /></a>
+            </h3>
+            <a href="#about" class="btn"
+              ><span>About Me</span>
+              <i class="fas fa-arrow-circle-down"></i>
+            </a>
           </div>
-        </ul>
-      </nav>
+          <div>
+            <img src="images/developer.gif" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- About section -->
+      <section id="about" class="about section mt-3">
+        <div class="container mt-5">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3">
+              <img
+                src="images/khemchand-twt11.png"
+                alt=""
+                class="img-thumbnail mb-4 home-img"
+              />
+            </div>
+            <div class="pl-md-4 col-md-9">
+              <h6 class="title">About Me</h6>
+              <p>A Full stack web developer</p>
+              <p id="user-detail-intro">
+                I am a passionate and dedicated MERN stack developer. With a
+                solid foundation in JavaScript, HTML, and CSS, I specialize in
+                building dynamic and interactive web applications. My primary
+                focus is on creating efficient and scalable solutions using the
+                MERN (MongoDB, Express.js, React.js, Node.js) stack.
+              </p>
+              <p>
+                I am excited about exploring new technologies and continuously
+                expanding my skill set. I have hands-on experience with
+                front-end development, including responsive design, UI/UX
+                principles, and integrating APIs. I am also proficient in
+                back-end development, designing RESTful APIs, and working with
+                databases.
+              </p>
+
+              <button id="resume-button-2">
+                <a
+                  id="resume-link-2"
+                  href="images/Khemchand-Resume.pdf"
+                  download
+                  onclick="window.open('images/Khemchand-Resume.pdf')"
+                  class="btn btn-primary rounded ml-4 nav-link resume"
+                  ><span>Resume</span>
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+
+      <!-- Skills section -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxl-nodejs skills-card-img"></i>
+              <span class="skills-card-name">NodeJS</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bx-code-alt skills-card-img"></i>
+              <span class="skills-card-name">Express</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxs-data skills-card-img"></i>
+              <span class="skills-card-name">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills-card-img"></i>
+              <span class="skills-card-name">HTML</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills-card-img"></i>
+              <span class="skills-card-name">CSS</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills-card-img"></i>
+              <span class="skills-card-name">JAVASCRIPT</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <div class="skills__names">
+              <i class="bx bxl-git skills__icon skills-card-img"></i>
+              <span class="skills-card-name">Git</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+
+      <!-- Project Section -->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project__container bd-grid">
+          <div class="project-card">
+            <img src="" alt="" />
+            <div class="project_details">
+              <h1 class="project-title">project title 1</h1>
+              <h5 class="project-tech-stack">
+                Node.js | Express | MongoDB | HTML | CSS | JavaScript
+              </h5>
+              <p class="project-description">description</p>
+              <br />
+              <a href="#" target="_blank" class="project-github-link"
+                ><i class="bx bxl-github skills__icon"></i
+              ></a>
+              <a href="#" target="_blank" class="project-deployed-link"
+                ><i class="bx bx-link-external skills__icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/dailyObject.jpg" alt="" />
+            <div class="project_details">
+              <h1 class="project-title">project title 2</h1>
+              <h5 class="project-tech-stack">HTML | CSS | JavaScript</h5>
+              <p class="project-description">description 2</p>
+              <br />
+              <a href="#" target="_blank" class="project-github-link"
+                ><i class="bx bxl-github skills__icon"></i
+              ></a>
+              <a href="#" target="_blank" class="project-deployed-link"
+                ><i class="bx bx-link-external skills__icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/sugar.jpg" alt="" />
+            <div class="project_details">
+              <h1 class="project-title">project title 3</h1>
+              <h5 class="project-tech-stack">
+                HTML | CSS | JavaScript | JSON | API
+              </h5>
+              <p class="project-description">description 3</p>
+              <br />
+              <a href="#" target="_blank" class="project-github-link"
+                ><i class="bx bxl-github skills__icon"></i
+              ></a>
+              <a href="#" target="_blank" class="project-deployed-link"
+                ><i class="bx bx-link-external skills__icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="images/to-do-list-apps.png" alt="" />
+            <div class="project_details">
+              <h1 class="project-title">project title 4</h1>
+              <h5 class="project-tech-stack">
+                Node.js | Express | MongoDB | HTML | CSS | JavaScript
+              </h5>
+              <p class="project-description">description 4</p>
+              <br />
+              <a href="#" target="_blank" class="project-github-link"
+                ><i class="bx bxl-github skills__icon"></i
+              ></a>
+              <a href="#" target="_blank" class="project-deployed-link"
+                ><i class="bx bx-link-external skills__icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section -->
+
+      <!-- Github stats -->
+      <div class="bd-grid stats">
+        <a href="https://github.com/khemchand-twt11" class="stats_card"
+          ><img
+            id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com?user=khemchand-twt11"
+        /></a>
+        <a href="https://github.com/khemchand-twt11" class="stats_card"
+          ><img
+            id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=khemchand-twt11"
+        /></a>
+        <a
+          href="https://github.com/khemchand-twt11"
+          class="stats_card react-activity-calendar"
+        >
+        </a>
+        <a href="https://github.com/khemchand-twt11" class="stats_card"
+          ><img
+            id="github-top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=khemchand-twt11"
+            alt=""
+        /></a>
+      </div>
+      <!-- Github stats -->
+
+      <!-- Contact section -->
+      <div id="contact">
+        <div class="box">
+          <h3>contact info</h3>
+          <p id="contact-phone"><i class="fas fa-phone"></i>+91 7290852476</p>
+          <p id="contact-email">
+            <i class="fas fa-envelope"></i>khemchandsh3@gmail.com
+          </p>
+          <p><i class="fas fa-map-marked-alt"></i>New Delhi, Delhi</p>
+          <div class="share">
+            <a
+              id="contact-linkedin"
+              href="https://www.linkedin.com/in/khemchand-sharma-8b146b216/"
+              class="fab fa-linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+            ></a>
+            <a
+              id="contact-github"
+              href="https://github.com/khemchand-twt11"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
     </div>
-    <!-- navbar  -->
-
-    <div id="home">
-      <div id="basic-info">
-        <div>
-          <h1>Hii There,</h1>
-          <h1 id="user-detail-name">I'm Khemchand</h1>
-          <h3>
-            <a href="https://git.io/typing-svg"
-              ><img
-                src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=32&pause=1000&color=0B2447&width=500&lines=A+Full+Stack+Web+Developer"
-                alt="Typing SVG"
-            /></a>
-          </h3>
-          <a href="#about" class="btn"
-            ><span>About Me</span>
-            <i class="fas fa-arrow-circle-down"></i>
-          </a>
-        </div>
-        <div>
-          <img src="images/developer.gif" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!-- About section -->
-    <section id="about" class="about section mt-3">
-      <div class="container mt-5">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3">
-            <img
-              src="images/khemchand-twt11.png"
-              alt=""
-              class="img-thumbnail mb-4 home-img"
-            />
-          </div>
-          <div class="pl-md-4 col-md-9">
-            <h6 class="title">About Me</h6>
-            <p>A Full stack web developer</p>
-            <p id="user-detail-intro">
-              I am a passionate and dedicated MERN stack developer. With a solid
-              foundation in JavaScript, HTML, and CSS, I specialize in building
-              dynamic and interactive web applications. My primary focus is on
-              creating efficient and scalable solutions using the MERN (MongoDB,
-              Express.js, React.js, Node.js) stack.
-            </p>
-            <p>
-              I am excited about exploring new technologies and continuously
-              expanding my skill set. I have hands-on experience with front-end
-              development, including responsive design, UI/UX principles, and
-              integrating APIs. I am also proficient in back-end development,
-              designing RESTful APIs, and working with databases.
-            </p>
-
-            <button id="resume-button-2">
-              <a
-                id="resume-link-2"
-                href="images/Khemchand-Resume.pdf"
-                download
-                onclick="window.open('images/Khemchand-Resume.pdf')"
-                class="btn btn-primary rounded ml-4 nav-link resume"
-                ><span>Resume</span>
-                <i class="fa-solid fa-download"></i>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About section -->
-
-    <!-- Skills section -->
-    <section class="skills section" id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills__container bd-grid">
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxl-nodejs skills-card-img"></i>
-            <span class="skills-card-name">NodeJS</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bx-code-alt skills-card-img"></i>
-            <span class="skills-card-name">Express</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxs-data skills-card-img"></i>
-            <span class="skills-card-name">MongoDB</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxl-html5 skills-card-img"></i>
-            <span class="skills-card-name">HTML</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxl-css3 skills-card-img"></i>
-            <span class="skills-card-name">CSS</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxl-javascript skills-card-img"></i>
-            <span class="skills-card-name">JAVASCRIPT</span>
-          </div>
-        </div>
-
-        <div class="skills-card">
-          <div class="skills__names">
-            <i class="bx bxl-git skills__icon skills-card-img"></i>
-            <span class="skills-card-name">Git</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills section -->
-
-    <!-- Project Section -->
-    <section class="projects section" id="projects">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="project__container bd-grid">
-        <div class="project-card">
-          <img src="" alt="" />
-          <div class="project_details">
-            <h1 class="project-title">project title 1</h1>
-            <h5 class="project-tech-stack">
-              Node.js | Express | MongoDB | HTML | CSS | JavaScript
-            </h5>
-            <p class="project-description">description</p>
-            <br />
-            <a href="#" target="_blank" class="project-github-link"
-              ><i class="bx bxl-github skills__icon"></i
-            ></a>
-            <a href="#" target="_blank" class="project-deployed-link"
-              ><i class="bx bx-link-external skills__icon"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="./images/dailyObject.jpg" alt="" />
-          <div class="project_details">
-            <h1 class="project-title">project title 2</h1>
-            <h5 class="project-tech-stack">HTML | CSS | JavaScript</h5>
-            <p class="project-description">description 2</p>
-            <br />
-            <a href="#" target="_blank" class="project-github-link"
-              ><i class="bx bxl-github skills__icon"></i
-            ></a>
-            <a href="#" target="_blank" class="project-deployed-link"
-              ><i class="bx bx-link-external skills__icon"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="./images/sugar.jpg" alt="" />
-          <div class="project_details">
-            <h1 class="project-title">project title 3</h1>
-            <h5 class="project-tech-stack">
-              HTML | CSS | JavaScript | JSON | API
-            </h5>
-            <p class="project-description">description 3</p>
-            <br />
-            <a href="#" target="_blank" class="project-github-link"
-              ><i class="bx bxl-github skills__icon"></i
-            ></a>
-            <a href="#" target="_blank" class="project-deployed-link"
-              ><i class="bx bx-link-external skills__icon"></i
-            ></a>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="images/to-do-list-apps.png" alt="" />
-          <div class="project_details">
-            <h1 class="project-title">project title 4</h1>
-            <h5 class="project-tech-stack">
-              Node.js | Express | MongoDB | HTML | CSS | JavaScript
-            </h5>
-            <p class="project-description">description 4</p>
-            <br />
-            <a href="#" target="_blank" class="project-github-link"
-              ><i class="bx bxl-github skills__icon"></i
-            ></a>
-            <a href="#" target="_blank" class="project-deployed-link"
-              ><i class="bx bx-link-external skills__icon"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Project Section -->
-
-    <!-- Github stats -->
-    <div class="bd-grid stats">
-      <a href="https://github.com/khemchand-twt11" class="stats_card"
-        ><img
-          id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com?user=khemchand-twt11"
-      /></a>
-      <a href="https://github.com/khemchand-twt11" class="stats_card"
-        ><img
-          id="github-stats-card"
-          src="https://github-readme-stats.vercel.app/api?username=khemchand-twt11"
-      /></a>
-      <a
-        href="https://github.com/khemchand-twt11"
-        class="stats_card react-activity-calendar"
-      >
-      </a>
-      <a href="https://github.com/khemchand-twt11" class="stats_card"
-        ><img
-          id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=khemchand-twt11"
-          alt=""
-      /></a>
-    </div>
-    <!-- Github stats -->
-
-    <!-- Contact section -->
-    <div id="contact">
-      <div class="box">
-        <h3>contact info</h3>
-        <p id="contact-phone"><i class="fas fa-phone"></i>+91 7290852476</p>
-        <p id="contact-email">
-          <i class="fas fa-envelope"></i>khemchandsh3@gmail.com
-        </p>
-        <p><i class="fas fa-map-marked-alt"></i>New Delhi, Delhi</p>
-        <div class="share">
-          <a
-            id="contact-linkedin"
-            href="https://www.linkedin.com/in/khemchand-sharma-8b146b216/"
-            class="fab fa-linkedin"
-            aria-label="LinkedIn"
-            target="_blank"
-          ></a>
-          <a
-            id="contact-github"
-            href="https://github.com/khemchand-twt11"
-            class="fab fa-github"
-            aria-label="GitHub"
-            target="_blank"
-          ></a>
-        </div>
-      </div>
-    </div>
-    <!-- Contact Section -->
   </body>
 </html>
-
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="index.js"></script>
 
