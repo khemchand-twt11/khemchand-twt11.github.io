@@ -1,11 +1,23 @@
+:root {
+  /* colors */
+  --clr-900: #141414;
+  --clr-accent-100: hsl(13, 100%, 96%);
+
+  /* font family */
+  --ff-primary: "Poppins", sans-serif;
+
+  /* font weight */
+
+  --fw-bold: 700;
+}
+
+/* Css reset by andy bell  */
 /* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-/* Remove default margin */
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +35,13 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -34,23 +50,19 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+a {
+  text-decoration: none;
+}
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+svg {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* Remove all animations, transitions andc smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -64,4 +76,17 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.main-container {
+  /* --max-width: 1410px; */
+  --padding: 1rem;
+  scroll-snap-type: y mandatory;
+
+  height: 100vh;
+  width: min(100%, 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+.scroll-behaviour {
+  scroll-snap-align: start;
 }
