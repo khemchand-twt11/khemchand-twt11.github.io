@@ -39,9 +39,9 @@ function sendMail() {
     email.value = "";
     message.value = "";
     console.log(res);
-    document.getElementById("name").value,
-      document.getElementById("email").value,
-      document.getElementById("message").value,
-      alert("your message sent successfy");
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+    alert("your message sent successfy");
   });
 }
