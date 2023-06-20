@@ -204,9 +204,11 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 2.75rem 0;
-  margin-top: 5rem;
+  /* margin-top: 150rem; */
+  padding-top: 10rem;
   align-items: center;
   justify-content: space-between;
+  /* border: 2px solid black; */
 }
 #basic-info > div > h1:nth-child(1),
 #basic-info > div > h1:nth-child(2) {
