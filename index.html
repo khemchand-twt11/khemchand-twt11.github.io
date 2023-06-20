@@ -33,26 +33,29 @@
         <div>
           <a href="#" class="logo">Khemchand</a>
         </div>
+        <i class="ri-menu-line hameburger" onclick="toggleNavigation()"></i>
+
         <nav id="nav-menu" class="navbar">
+          <i class="ri-close-line cross" onclick="toggleNavigation()"></i>
           <ul role="list">
             <li><a class="active nav-link home" href="#home">Home</a></li>
             <li><a class="nav-link about" href="#about">About</a></li>
             <li><a class="nav-link skills" href="#skills">Skills</a></li>
             <li><a class="nav-link projects" href="#projects">Projects</a></li>
             <li><a class="nav-link contact" href="#contact">Contact</a></li>
-            <div>
-              <button id="resume-button-1">
-                <a
-                  id="resume-link-1"
-                  href="images/Khemchand-Resume.pdf"
-                  download
-                  onclick="window.open('images/Khemchand-Resume.pdf')"
-                  class="nav-link resume"
-                  ><span>Resume</span>
-                </a>
-              </button>
-            </div>
           </ul>
+          <div class="resume-btn-container">
+            <button id="resume-button-1">
+              <a
+                id="resume-link-1"
+                href="images/Khemchand-Resume.pdf"
+                download
+                onclick="window.open('images/Khemchand-Resume.pdf')"
+                class="nav-link resume"
+                ><span>Resume</span>
+              </a>
+            </button>
+          </div>
         </nav>
       </div>
       <!-- navbar  -->

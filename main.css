@@ -1,6 +1,8 @@
 :root {
   /* colors */
+  --clr-800: #0e2954;
   --clr-900: #141414;
+
   --clr-accent-100: hsl(13, 100%, 96%);
 
   /* font family */
@@ -13,8 +15,11 @@
   --fw-700: 700;
 
   /* font sizes */
-  --fs-400: 1rem;
-  --fs-450: 1.4rem;
+  --fs-400: 1rem; /*16px*/
+  --fs-450: 1.125rem; /*18px*/
+  --fs-500: 1.4rem; /*22.4px*/
+  --fs-550: 1.75rem; /*28px*/
+  --fs-600: 2rem; /*32px*/
 }
 
 /* Css reset by andy bell  */
@@ -47,6 +52,7 @@ html {
 html,
 body {
   height: 100%;
+  font-family: var(--ff-primary);
 }
 
 /* Set core body defaults */
@@ -93,10 +99,154 @@ svg {
 .main-container {
   --padding: 1rem;
   height: 100vh;
-  width: min(100%, 100% - (var(--padding) * 2));
+  width: min(1340px, 100% - (var(--padding) * 1));
   margin-inline: auto;
   scroll-snap-type: y mandatory;
 }
 .scroll-behaviour {
   scroll-snap-align: start;
+}
+
+/* NORMAL STYLES */
+/* CSS styles */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--clr-900);
+  top: 0;
+  background: white;
+}
+
+.logo {
+  font-size: var(--fs-500);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--clr-900);
+}
+
+.hameburger {
+  font-size: 26px;
+  display: block;
+  cursor: pointer;
+}
+.hameburger.active {
+  display: none;
+}
+.cross {
+  display: none;
+}
+.cross.active {
+  display: block;
+  font-size: 26px;
+  display: block;
+  text-align: right;
+  top: 0;
+  cursor: pointer;
+  padding: 0 4px 6px 0;
+  color: white;
+  font-weight: var(--fw-600);
+}
+
+.navbar {
+  display: none;
+}
+.navbar.active {
+  display: block;
+  background-color: var(--clr-800);
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  min-width: 250px;
+  width: 30%;
+}
+
+.navbar.active ul li {
+  margin: 0 10px;
+  font-weight: var(--fw-600);
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.navbar.active ul li a {
+  text-decoration: none;
+  color: var(--clr-accent-100);
+  display: block;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+.resume-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar.active #resume-button-1 {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 2px solid #fff;
+  font-weight: var(--fw-600);
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 48em) {
+  #header > div:nth-child(1) {
+    flex: 1;
+  }
+  #header > nav {
+    flex: 2;
+  }
+
+  .logo {
+    font-size: var(--fs-550);
+  }
+  nav {
+    display: flex;
+    gap: 0 20px;
+  }
+  .navbar.active {
+    display: none;
+  }
+
+  .hameburger {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cross.active {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+  .navbar ul li {
+    font-size: var(--fs-450);
+    font-weight: var(--fw-600);
+  }
+  .navbar ul li:hover {
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--clr-900);
+  }
+  #resume-button-1 {
+    font-size: var(--fs-450);
+    background: var(--clr-900);
+    padding: 0.25em 0.85em;
+    border: none;
+    border-radius: 0.6rem;
+  }
+  #resume-button-1 a {
+    background: var(--clr-900);
+    color: white;
+    font-weight: var(--fw-600);
+  }
 }
