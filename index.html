@@ -53,7 +53,9 @@
                 download
                 onclick="window.open('images/Khemchand-Resume.pdf')"
                 class="nav-link resume"
-                ><span>Resume <i class="ri-download-fill"></i></span>
+                ><span style="display: flex">
+                  <span>Resume</span> <i class="ri-download-fill"></i
+                ></span>
               </a>
             </button>
           </div>
@@ -84,7 +86,11 @@
       </div>
 
       <!-- About section -->
-      <section id="about" class="about section scroll-behaviour">
+      <section
+        id="about"
+        class="about section scroll-behaviour"
+        style="margin-top: 12rem"
+      >
         <div class="container">
           <div>
             <div>
@@ -350,42 +356,85 @@
 
       <!-- Contact section -->
       <div id="contact" class="scroll-behaviour">
-        <div class="box">
-          <h3>contact info</h3>
-          <p id="contact-phone"><i class="fas fa-phone"></i>+91 7290852476</p>
-          <p id="contact-email">
-            <i class="fas fa-envelope"></i>khemchandsh3@gmail.com
-          </p>
-          <p><i class="fas fa-map-marked-alt"></i>New Delhi, Delhi</p>
-          <div class="share">
-            <a
-              id="contact-linkedin"
-              href="https://www.linkedin.com/in/khemchand-sharma-8b146b216/"
-              class="fab fa-linkedin"
-              aria-label="LinkedIn"
-              target="_blank"
-              ><i class="ri-linkedin-box-fill"></i
-            ></a>
-            <a
-              id="contact-github"
-              href="https://github.com/khemchand-twt11"
-              class="fab fa-github"
-              aria-label="GitHub"
-              target="_blank"
-              ><i class="ri-github-fill"></i
-            ></a>
-            <a
-              id="contact-github"
-              href="https://twitter.com/khemtwt11"
-              class="fab fa-github"
-              aria-label="GitHub"
-              target="_blank"
-              ><i class="ri-twitter-fill"></i
-            ></a>
+        <p class="section-title">Contact Me</p>
+        <div>
+          <div class="box">
+            <h3>Let's connect</h3>
+            <p>
+              Feel free to get in touch with me. I would love to hear from you!
+            </p>
+            <p id="contact-phone" class="contact-details">
+              <i class="ri-phone-fill"></i> <span>+91 7290852476</span>
+            </p>
+            <p id="contact-email" class="contact-details">
+              <i class="ri-mail-fill"></i> <span> khemchandsh3@gmail.com</span>
+            </p>
+            <p class="contact-details">
+              <i class="ri-map-pin-fill"></i>
+              <span> New Delhi, Delhi</span>
+            </p>
+            <div class="share">
+              <a
+                id="contact-linkedin"
+                href="https://www.linkedin.com/in/khemchand-sharma-8b146b216/"
+                class="fab fa-linkedin"
+                aria-label="LinkedIn"
+                target="_blank"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+              <a
+                id="contact-github"
+                href="https://github.com/khemchand-twt11"
+                class="fab fa-github"
+                aria-label="GitHub"
+                target="_blank"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                id="contact-github"
+                href="https://twitter.com/khemtwt11"
+                class="fab fa-github"
+                aria-label="GitHub"
+                target="_blank"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h1 class="drop-message">Drop a message 🚀</h1>
+            <form>
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your name*"
+                  required
+                />
+              </div>
+              <div>
+                <input type="email" id="email" placeholder="Email*" required />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  style="resize: none"
+                  placeholder="Your message*"
+                ></textarea>
+                <button type="submit">SEND MESSAGE</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
       <!-- Contact Section -->
+      <div class="tilted-div">
+        <div class="tilted-content">
+          <p>Copyright &copy; Khemchand</p>
+          <p>- Powered by Creativity and Passion</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

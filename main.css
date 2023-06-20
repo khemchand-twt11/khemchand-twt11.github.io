@@ -197,7 +197,7 @@ svg {
 }
 
 #about {
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 #basic-info {
   display: flex;
@@ -273,7 +273,7 @@ svg {
 }
 
 #about + .skills {
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 .section-title {
   font-size: var(--fs-550);
@@ -303,6 +303,7 @@ svg {
 
 .github-small__stats {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 2rem;
 }
@@ -317,15 +318,86 @@ svg {
 }
 
 #projects {
-  margin-top: 10rem;
+  margin-top: 7rem;
+}
+#contact {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+#contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 7rem;
+}
+
+#contact form > div input,
+#contact form > div textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 50px;
+  border-radius: 0.75rem;
+  outline: none;
+  border: none;
+  border: 2px solid #cacaca;
+  padding-left: 0.45em;
+  font-size: var(--fs-450);
+}
+
+#contact form > div textarea {
+  height: 200px;
+  font-size: var(--fs-450);
+}
+.box > h3 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-700);
+}
+.box > h3 + p {
+  font-size: var(--fs-450);
+  font-weight: var(--fw-600);
+}
+
+.contact-details {
+  font-size: var(--fs-450);
+  display: flex;
+  font-weight: var(--fw-500);
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.share {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0 0.8rem;
+}
+.share a i {
+  font-size: var(--fs-600);
+}
+.tilted-div {
+  background-color: var(--clr-900);
+  height: 80px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: var(--fw-500);
+}
+.tilted-div p {
+  text-align: center;
+}
+.drop-message {
+  font-size: var(--fs-550);
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
 }
 @media (min-width: 500px) {
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 /* Media Query for Responsive Design */
-@media (min-width: 740px) {
+@media (min-width: 840px) {
   #header > div:nth-child(1) {
     flex: 1;
   }
@@ -383,7 +455,7 @@ svg {
   }
   #basic-info {
     flex-direction: row;
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
   #basic-info > div > h1:nth-child(1),
   #basic-info > div > h1:nth-child(2) {
@@ -412,5 +484,26 @@ svg {
   }
   .skills__container {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .github-small__stats {
+    flex-direction: row;
+  }
+  #contact > div {
+    flex-direction: row-reverse;
+    margin-inline: auto;
+    justify-content: space-around;
+  }
+  #contact > div > div:nth-child(1) {
+    flex: 1;
+  }
+  #contact > div > div:nth-child(2) {
+    flex: 1;
+  }
+  .box > h3 {
+    font-size: var(--fs-700);
+  }
+  .tilted-div > div {
+    display: flex;
+    font-style: var(--fs-500);
   }
 }
