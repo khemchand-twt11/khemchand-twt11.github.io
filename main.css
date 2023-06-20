@@ -197,7 +197,7 @@ svg {
 }
 
 #about {
-  margin-top: 7rem;
+  margin-top: 10rem;
 }
 #basic-info {
   display: flex;
@@ -273,7 +273,7 @@ svg {
 }
 
 #about + .skills {
-  margin-top: 7rem;
+  margin-top: 10rem;
 }
 .section-title {
   font-size: var(--fs-550);
@@ -318,16 +318,16 @@ svg {
 }
 
 #projects {
-  margin-top: 7rem;
+  margin-top: 10rem;
 }
 #contact {
-  margin-top: 7rem;
+  margin-top: 10rem;
   margin-bottom: 4rem;
 }
 #contact > div {
   display: flex;
   flex-direction: column;
-  gap: 2rem 7rem;
+  gap: 2rem 10rem;
 }
 
 #contact form > div input,
@@ -465,7 +465,7 @@ svg {
   }
   #basic-info {
     flex-direction: row;
-    margin-top: 7rem;
+    margin-top: 10rem;
   }
   #basic-info > div > h1:nth-child(1),
   #basic-info > div > h1:nth-child(2) {
