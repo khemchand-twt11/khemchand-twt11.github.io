@@ -301,6 +301,21 @@ svg {
   font-weight: var(--fw-600);
 }
 
+.github-small__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.github-small__stats > div {
+  /* border: 4px solid rgba(128, 128, 128, 0.243); */
+  border-radius: 6px;
+}
+.github-small__stats > div a img {
+  width: 100%;
+  border: 3px solid rgba(128, 128, 128, 0.087);
+  border-radius: 0.75rem;
+}
+
 #projects {
   margin-top: 10rem;
 }
@@ -310,7 +325,7 @@ svg {
   }
 }
 /* Media Query for Responsive Design */
-@media (min-width: 48em) {
+@media (min-width: 740px) {
   #header > div:nth-child(1) {
     flex: 1;
   }

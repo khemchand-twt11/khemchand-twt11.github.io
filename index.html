@@ -306,27 +306,45 @@
 
       <!-- Github stats -->
       <div class="stats scroll-behaviour">
-        <a href="https://github.com/khemchand-twt11" class="stats_card"
-          ><img
-            id="github-streak-stats"
-            src="https://github-readme-streak-stats.herokuapp.com?user=khemchand-twt11"
-        /></a>
-        <a href="https://github.com/khemchand-twt11" class="stats_card"
-          ><img
-            id="github-stats-card"
-            src="https://github-readme-stats.vercel.app/api?username=khemchand-twt11"
-        /></a>
-        <a
-          href="https://github.com/khemchand-twt11"
-          class="stats_card react-activity-calendar"
-        >
+        <h1 class="section-title">Github Stats</h1>
+        <a>
+          <div
+            class="calendar react-activity-calendar"
+            style="
+              border: 6px solid rgba(128, 128, 128, 0.087);
+              border-radius: 0.75rem;
+            "
+          >
+            <!-- Loading stuff -->
+            Loading the data just for you.
+          </div>
         </a>
-        <a href="https://github.com/khemchand-twt11" class="stats_card"
-          ><img
-            id="github-top-langs"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=khemchand-twt11"
-            alt=""
-        /></a>
+
+        <div class="github-small__stats">
+          <div>
+            <a href="https://github.com/khemchand-twt11" class="stats_card"
+              ><img
+                id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=khemchand-twt11"
+            /></a>
+          </div>
+
+          <div>
+            <a href="https://github.com/khemchand-twt11" class="stats_card"
+              ><img
+                id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=khemchand-twt11"
+            /></a>
+          </div>
+          <div>
+            <a href="https://github.com/khemchand-twt11" class="stats_card"
+              ><img
+                id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=khemchand-twt11"
+                alt=""
+            /></a>
+          </div>
+        </div>
       </div>
       <!-- Github stats -->
 
@@ -346,6 +364,7 @@
               class="fab fa-linkedin"
               aria-label="LinkedIn"
               target="_blank"
+              ><i class="ri-linkedin-box-fill"></i
             ></a>
             <a
               id="contact-github"
@@ -353,6 +372,15 @@
               class="fab fa-github"
               aria-label="GitHub"
               target="_blank"
+              ><i class="ri-github-fill"></i
+            ></a>
+            <a
+              id="contact-github"
+              href="https://twitter.com/khemtwt11"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+              ><i class="ri-twitter-fill"></i
             ></a>
           </div>
         </div>
@@ -370,4 +398,7 @@
     responsive: true,
     global_stats: false,
   });
+
+  GitHubCalendar(".calendar", "khemchand-twt11");
+  GitHubCalendar(".calendar", "khemchand-twt11", { responsive: true });
 </script>
