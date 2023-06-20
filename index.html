@@ -380,7 +380,7 @@
                 class="fab fa-linkedin"
                 aria-label="LinkedIn"
                 target="_blank"
-                ><i class="ri-linkedin-box-fill"></i
+                ><i class="ri-linkedin-box-fill" style="color: #0a66c2"></i
               ></a>
               <a
                 id="contact-github"
@@ -388,7 +388,7 @@
                 class="fab fa-github"
                 aria-label="GitHub"
                 target="_blank"
-                ><i class="ri-github-fill"></i
+                ><i class="ri-github-fill" style="color: #171515"></i
               ></a>
               <a
                 id="contact-github"
@@ -396,13 +396,13 @@
                 class="fab fa-github"
                 aria-label="GitHub"
                 target="_blank"
-                ><i class="ri-twitter-fill"></i
+                ><i class="ri-twitter-fill" style="color: #1da1f2"></i
               ></a>
             </div>
           </div>
           <div>
             <h1 class="drop-message">Drop a message 🚀</h1>
-            <form>
+            <form onsubmit="return false;">
               <div>
                 <input
                   type="text"
@@ -422,7 +422,7 @@
                   style="resize: none"
                   placeholder="Your message*"
                 ></textarea>
-                <button type="submit">SEND MESSAGE</button>
+                <button onclick="sendMail()">SEND MESSAGE</button>
               </div>
             </form>
           </div>
@@ -438,8 +438,20 @@
     </div>
   </body>
 </html>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("0hzywpc1HPEah1D4d");
+  })();
+</script>
 
+<script src="email.js"></script>
 <script src="index.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script>

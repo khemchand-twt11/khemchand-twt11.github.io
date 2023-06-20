@@ -369,7 +369,7 @@ svg {
   gap: 0 0.8rem;
 }
 .share a i {
-  font-size: var(--fs-600);
+  font-size: var(--fs-650);
 }
 .tilted-div {
   background-color: var(--clr-900);
@@ -389,6 +389,16 @@ svg {
   font-size: var(--fs-550);
   font-weight: var(--fw-600);
   margin-bottom: 1rem;
+}
+#contact button {
+  background: var(--clr-900);
+  color: white;
+  border: 2px solid var(--clr-900);
+  font-size: var(--fs-450);
+  font-weight: var(--fw-500);
+  padding: 0.45em 1.25em;
+  border-radius: 0.75em;
+  cursor: pointer;
 }
 @media (min-width: 500px) {
   .skills__container {
