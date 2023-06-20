@@ -197,7 +197,8 @@ svg {
 }
 
 #about {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
 }
 #basic-info {
   display: flex;
@@ -273,7 +274,8 @@ svg {
 }
 
 #about + .skills {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
 }
 .section-title {
   font-size: var(--fs-550);
@@ -318,16 +320,18 @@ svg {
 }
 
 #projects {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
 }
 #contact {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
   margin-bottom: 4rem;
 }
 #contact > div {
   display: flex;
   flex-direction: column;
-  gap: 2rem 10rem;
+  gap: 2rem 4rem;
 }
 
 #contact form > div input,
@@ -400,6 +404,10 @@ svg {
   border-radius: 0.75em;
   cursor: pointer;
 }
+.fixed {
+  position: sticky;
+  top: 0;
+}
 @media (min-width: 500px) {
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
@@ -465,7 +473,7 @@ svg {
   }
   #basic-info {
     flex-direction: row;
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
   #basic-info > div > h1:nth-child(1),
   #basic-info > div > h1:nth-child(2) {
