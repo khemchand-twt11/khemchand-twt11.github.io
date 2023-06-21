@@ -204,11 +204,9 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 2.75rem 0;
-  /* margin-top: 150rem; */
-  padding-top: 4rem;
+  padding-top: 10rem;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid black; */
 }
 #basic-info > div > h1:nth-child(1),
 #basic-info > div > h1:nth-child(2) {
@@ -305,7 +303,8 @@ svg {
   font-weight: var(--fw-600);
 }
 .stats {
-  padding-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
 }
 .github-small__stats {
   display: flex;
