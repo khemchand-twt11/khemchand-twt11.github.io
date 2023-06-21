@@ -198,7 +198,7 @@ svg {
 
 #about {
   margin-top: 5rem;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   padding-top: 7rem;
 }
 #basic-info {
@@ -276,8 +276,8 @@ svg {
 
 #about + .skills {
   margin-top: 5rem;
-  padding-top: 5rem;
-  /* border: 2px solid teal; */
+  padding-top: 7rem;
+  border: 2px solid teal;
 }
 .section-title {
   font-size: var(--fs-550);
