@@ -205,7 +205,7 @@ svg {
   flex-direction: column;
   gap: 2.75rem 0;
   /* margin-top: 150rem; */
-  padding-top: 10rem;
+  padding-top: 4rem;
   align-items: center;
   justify-content: space-between;
   /* border: 2px solid black; */
@@ -304,7 +304,9 @@ svg {
   font-size: var(--fs-450);
   font-weight: var(--fw-600);
 }
-
+.stats {
+  padding-top: 10rem;
+}
 .github-small__stats {
   display: flex;
   flex-direction: column;
@@ -411,16 +413,48 @@ svg {
   top: 0;
 }
 .project-links {
-  width: 30%;
   display: flex;
+  width: 40%;
   font-size: var(--fs-450);
 }
-.project-links > a {
-  width: 100%;
+.project-links a {
   display: flex;
-
+  justify-content: space-around;
+  align-items: center;
   gap: 0 0.75rem;
 }
+.project-card {
+  margin-bottom: 2rem;
+}
+.project-card a img {
+  border-radius: 0.75rem;
+}
+.project-title {
+  margin-top: 2.75rem;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-600);
+  margin-bottom: 1rem;
+}
+.project-description {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-500);
+  margin-bottom: 1.2rem;
+}
+.project-tech-stack {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-500);
+  margin-bottom: 1.2rem;
+}
+.project-links a {
+  background: var(--clr-900);
+  color: white;
+  margin: 1.2rem 1rem;
+  padding: 0.35em 0.785em;
+  font-size: var(--fs-400);
+  border-radius: 6px;
+  font-weight: var(--fw-600);
+}
+
 @media (min-width: 500px) {
   .skills__container {
     grid-template-columns: repeat(3, 1fr);
@@ -549,7 +583,7 @@ svg {
   }
 
   .project-card a {
-    display: block;
+    /* display: block; */
     flex: 1;
   }
   .project-card a img {
@@ -568,5 +602,8 @@ svg {
     font-size: var(--fs-500);
     font-weight: var(--fw-600);
     margin-bottom: 1rem;
+  }
+  #basic-info {
+    padding-top: 10rem;
   }
 }
