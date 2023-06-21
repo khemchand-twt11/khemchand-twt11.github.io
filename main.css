@@ -198,7 +198,7 @@ svg {
 
 #about {
   margin-top: 5rem;
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 #basic-info {
   display: flex;
@@ -601,8 +601,5 @@ svg {
     font-size: var(--fs-500);
     font-weight: var(--fw-600);
     margin-bottom: 1rem;
-  }
-  #basic-info {
-    padding-top: 10rem;
   }
 }
