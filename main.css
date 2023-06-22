@@ -277,7 +277,7 @@ svg {
 #about + .skills {
   margin-top: 5rem;
   padding-top: 7rem;
-  border: 2px solid teal;
+  /* border: 2px solid teal; */
 }
 .section-title {
   font-size: var(--fs-550);
